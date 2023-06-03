@@ -1,0 +1,43 @@
+html {
+    background-color: #FCA6C9;
+}
+header h1, header h4 {
+    color: white;
+    text-align: center;
+    font-weight: bold   ;
+}
+header p {
+    color: white;
+    width: 30%;
+    margin: 0 auto;
+    text-align: center;
+}
+ol {
+    margin: 0 auto;
+    width: 30%;
+    font-weight: bold;
+}
+img {
+    width: 10%;
+    display: block;
+    margin: 15px auto;
+}
+main p {
+    color: white;
+    font-size: 2em;
+    width: 18%;
+    margin: 0 auto;
+    text-align: center;
+}
+footer {
+    margin: 30px auto;
+}
+footer p {
+    text-align: center;
+    width: 23%;
+    margin: 0 auto;
+    font-weight: bold;
+}
+h1:hover {
+    color: black;
+}

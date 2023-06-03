@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+}
+.header img {
+    width: 100%;
+    display: block;
+}
+.main {
+    background-color: #737373;
+    padding: 50px 50px;
+}
+.main img {
+    border-radius: 50%;
+    width: 21%;
+    border: 15px solid #444444;
+    margin: 0 70px;
+}
