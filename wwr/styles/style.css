@@ -184,6 +184,90 @@ footer a:hover {
 footer .social img {
     padding-top: 15px;
 }
+
+/* Styles for Rivers Page */
+
+#header-rivers {
+    background-color: rgb(27, 73, 101);
+}
+
+.rivers-grid {
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    column-gap: 40px;
+}
+
+.rivers-img {
+    width: 100%;
+    border: 5px solid #1B4965;
+}
+
+.salmon-river {
+    grid-column: 2/6;
+    grid-row: 1/2;
+    margin-top: 100px;
+    align-self: center;
+}
+
+.sriver-text {
+    grid-column: 6/11;
+    grid-row: 1/2;
+    margin-top: 100px;
+}
+
+.sriver-p {
+    grid-column: 2/11;
+    grid-row: 2/3;
+}
+
+.canyon-utah {
+    grid-column: 7/11;
+    grid-row: 4/5;
+    margin-top: 100px;
+    align-self: center;
+}
+
+.cutah-text {
+    grid-column: 2/7;
+    grid-row: 4/5;
+    margin-top: 100px;
+}
+
+.cutah-p {
+    grid-column: 2/11;
+    grid-row: 5/6;
+}
+
+.canyon-arizona {
+    grid-column: 2/6;
+    grid-row: 7/8;
+    margin-top: 100px;
+    align-self: center;
+}
+
+.carizona-text {
+    grid-column: 6/11;
+    grid-row: 7/8;
+    margin-top: 100px;
+}
+
+.carizona-p {
+    grid-column: 2/11;
+    grid-row: 8/9;
+    margin-bottom: -100px;
+}
+
+.rivers-grid h2 {
+    font-family: 'Gloria Hallelujah', 'Goudy Old Style', sans-serif;
+    color: #1B4965;   
+    border-radius: 15px;
+    background-color: #BEE9E8;
+}
+
+.rivers-grid p {
+    text-align: justify;
+}
+
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;
