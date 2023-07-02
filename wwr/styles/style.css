@@ -215,9 +215,14 @@ footer .social img {
     margin-top: 100px;
 }
 
+#par2 {
+    grid-column: 6/11;
+    grid-row: 2/3;
+}
+
 .sriver-p {
     grid-column: 2/11;
-    grid-row: 2/3;
+    grid-row: 3/4;
 }
 
 .canyon-utah {
