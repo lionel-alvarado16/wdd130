@@ -183,8 +183,8 @@ footer .social img {
 /* Style the tab */
 .tab {
   float: left;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
+  border-right: 1px solid #ccc;
+  background-color: white;
   width: 30%;
   height: 1050px;
 }
@@ -192,8 +192,8 @@ footer .social img {
 /* Style the buttons that are used to open the tab content */
 .tab button {
   display: block;
-  background-color: inherit;
-  color: black;
+  background-color: rgb(42, 157, 143);
+  color: white;
   padding: 22px 16px;
   width: 100%;
   border: none;
@@ -207,12 +207,12 @@ footer .social img {
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-  background-color: #ddd;
+  background-color: #E9C46A;
 }
 
 /* Create an active/current "tab button" class */
 .tab button.active {
-  background-color: #ccc;
+  background-color: #E76F51;
 }
 
 /* Style the tab content */
@@ -245,11 +245,13 @@ footer .social img {
 h3 {
     font-family: Macondo, 'Goudy Old Style', sans-serif;
     font-size: 2em;
+    color: #264653;
 }
 #attract-title {
     margin: 25px auto;
     font-family: Macondo, 'Goudy Old Style', sans-serif;
     font-size: 2em;
+    color: #264653;
 }
 #header-attract {
     background-color: rgb(42, 157, 143);
