@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adventure</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
     <div id="content">
-        <header>
+        <header id="header-attract">
             <a id="logo_link" href="index.html">
                 <img class="logo" src="images/vclogo.png" alt="Visiting Cusco Logo">
             </a>
@@ -25,18 +26,19 @@
                 <!-- Full-width images with number and caption text -->
                 <div class="mySlides fade">
                     <div class="numbertext">1 / 3</div>
-                    <img src="images/adventure-img-1.jpg" style="width:100%">
+                    <img src="images/adventure-img-1.jpg" alt="Kayaking" style="width:100%">
                     <div class="text">Kayaking</div>
                 </div>
         
                 <div class="mySlides fade">
                     <div class="numbertext">2 / 3</div>
-                    <img src="images/adventure-img-2.jpg" style="width:100%">
+                    <img src="images/adventure-img-2.jpg" alt="Trekking" style="width:100%">
                     <div class="text">Trekking, Inca Trail</div>
                 </div>
         
                 <div class="mySlides fade">
                     <div class="numbertext">3 / 3</div>
+                    <img src="images/adventure-img-3.jpg" alt="Paragliding" style="width:100%">
                     <div class="text">Paragliding</div>
                 </div>
         
@@ -94,5 +96,48 @@
             </div>
         </footer>
     </div>
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active1", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active1";
+        }
+
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active2");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
 </body>
 </html>
