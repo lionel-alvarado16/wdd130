@@ -186,7 +186,7 @@ footer .social img {
   border-right: 1px solid #ccc;
   background-color: white;
   width: 30%;
-  height: 1050px;
+  height: auto;
 }
 
 /* Style the buttons that are used to open the tab content */
@@ -221,9 +221,8 @@ footer .social img {
   padding: 0px 12px;
   border: 1px solid #ccc;
   width: 70%;
-  border-left: none;
-  height: 1050px;
-
+  height: auto;
+  margin-bottom: 100px;
 }
 .tabcontent p {
     color: #264653;
@@ -237,7 +236,7 @@ footer .social img {
     color: white;
     font-size: 1.2em;
     padding: 25px 50px;
-    margin-top: 1150px;
+    margin-top: auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
